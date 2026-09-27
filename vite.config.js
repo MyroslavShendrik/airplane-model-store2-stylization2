@@ -4,5 +4,5 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'airplane-model-store2-stylization1', //! <-- ім'я репозиторію
+  base: 'airplane-model-store2-stylization2', //! <-- ім'я репозиторію
 })
