@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 // import PlaneItem from "./PlaneItemBuiltInStyles.jsx"; //! вбудовані стилі
-import PlaneItem from "./PlaneItemVanillaCSS.jsx"; //! ванільний CSS
+import PlaneItem from "../PlaneItem/PlaneItem.jsx"; //! ванільний CSS
 // import {color} from "../utils/getBackgroundColor.js"
-import { getBgColorBuiltInStyles, getBgColorVanillaCSS } from "../utils/getBackgroundColor.js";
+import { getBgColorBuiltInStyles, getBgColorVanillaCSS } from "../../utils/getBackgroundColor.js";
 import clsx from "clsx";
 
 const className = clsx(
