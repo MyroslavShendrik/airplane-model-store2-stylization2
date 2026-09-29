@@ -4,6 +4,8 @@ import PlaneItem from "../PlaneItem/PlaneItem.jsx"; //! ванільний CSS
 // import {color} from "../utils/getBackgroundColor.js"
 import { getBgColorBuiltInStyles, getBgColorVanillaCSS } from "../../utils/getBackgroundColor.js";
 import clsx from "clsx";
+import './PlanesList.css'
+
 
 const className = clsx(
   "first",

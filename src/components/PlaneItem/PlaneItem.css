@@ -1,41 +1,4 @@
-/*! Ванільний CSS (Vanilla CSS) */
-/*? Section.jsx */
-/* .title {
-    margin-bottom: 24px;
-    font-size: 48px;
-    text-align: center;
-    color: darkred;
-} */
-
-/*? PlanesList.jsx */
-/* .planesList {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
-    gap: 32px;
-    outline: 1px solid red;
-}
-
-.planesItem {
-    display: grid;
-    gap: 12px;
-    padding: 10px;
-    background-color: #ffdb92;
-    outline: 1px solid grey;
-}
-/** backgroundColor: '#d2fdbd', // "year"  1946 - 1999 - last */
-/* .planesItem.last {
-  background-color: #d2fdbd;
-}
-
-.planesItem.last.current{
-  background-color: #d6f1ff;
-} */ 
-
-/*? PlaneItem.jsx */
-/* .planeTitle {
+.planeTitle {
     margin-bottom: 12px;
     padding: 12px 16px;
     font-size: 32px;
@@ -82,4 +45,4 @@
         1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.1);
     box-shadow:
         inset 0 0 16px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.9);
-} */
+}

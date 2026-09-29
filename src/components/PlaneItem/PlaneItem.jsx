@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 import defaultImage from "./default.jpg"; //! Дефолтне зображення
+import './PlaneItem.css'
+
 
 //! Стилі для текстових полів
 const textField = {

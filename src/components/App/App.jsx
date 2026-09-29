@@ -1,4 +1,4 @@
-import './App.css'; //! Ванільний CSS (Vanilla CSS)
+// import './App.css'; //! Ванільний CSS (Vanilla CSS)
 
 // import Section from './components/SectionWOStyle';  //! без стилізації
 // import Section from './components/SectionBuiltInStyles'; //! вбудовані стилі
