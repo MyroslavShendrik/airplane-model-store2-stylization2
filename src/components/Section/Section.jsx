@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import './Section.css'
-
+// import './Section.css'
+import css from "./Section.module.css"; //! CSS-модулі
 
 function Section({ title, children }) {
   return (
@@ -13,7 +13,8 @@ function Section({ title, children }) {
           //   textAlign: "center",
           //   color: "darkred",
           // }}
-          className="title"
+          // className="title"
+          className={css.title}
         >
           {title}
         </h2>

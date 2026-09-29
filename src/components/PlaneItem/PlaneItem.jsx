@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import defaultImage from "./default.jpg"; //! Дефолтне зображення
-import './PlaneItem.css'
-
+// import './PlaneItem.css'
+import css from "./PlaneItem.module.css";
 
 //! Стилі для текстових полів
 const textField = {
@@ -46,52 +46,73 @@ export default function PlaneItem({
         //   backgroundColor: "yellow",
         //   color: "blue",
         // }}
-        className="planeTitle"
+        // className="planeTitle"
+        className={css.planeTitle}
       >
         {nameBrief}
       </h3>
       <img src={urlMain} alt={nameBrief} />
-      <p className="textField">
-        Повна назва: <span className="textFieldValue">{nameFull}</span>
-      </p>
-      <p className="textField">
-        Тип: <span className="textFieldValue">{type}</span>{" "}
-      </p>
-      <p className="textField">
-        Прізвисько: <span className="textFieldValue">{nickname}</span>
-      </p>
-      <p className="textField">
-        Країна виробник: <span className="textFieldValue">{country}</span>
-      </p>
-      <p className="textField">
-        Рік випуску: <span className="textFieldValue">{year}</span>
-      </p>
-      <p className="textField">
-        Ціна: <span className="textFieldValue">{price}</span>
-      </p>
-      <p className="textField">
-        Опис: <span className="textFieldValue">{description}</span>
-      </p>
-      <p className="imageTitles">Рекламна модель:</p>
-      <img src={urlPromotional} alt={nameBrief} />
-      <p className="imageTitles">Реальна модель:</p>
-      <div
-        style={{
-          display: "flex",
-          gap: 10,
-          flexWrap: "wrap",
-          padding: "8px",
-          borderRadius: 8,
-          backgroundColor: "gray",
-        }}
+      <p
+        // className="textField"
+        className={css.textField}
       >
+        Повна назва: <span className={css.textFieldValue}>{nameFull}</span>
+      </p>
+      <p
+        // className="textField"
+        className={css.textField}
+      >
+        Тип: <span className={css.textFieldValue}>{type}</span>{" "}
+      </p>
+      <p
+        // className="textField"
+        className={css.textField}
+      >
+        Прізвисько: <span className={css.textFieldValue}>{nickname}</span>
+      </p>
+      <p
+        // className="textField"
+        className={css.textField}
+      >
+        Країна виробник: <span className={css.textFieldValue}>{country}</span>
+      </p>
+      <p
+        // className="textField"
+        className={css.textField}
+      >
+        Рік випуску: <span className={css.textFieldValue}>{year}</span>
+      </p>
+      <p
+        // className="textField"
+        className={css.textField}
+      >
+        Ціна: <span className={css.textFieldValue}>{price}</span>
+      </p>
+      <p
+        // className="textField"
+        className={css.textField}
+      >
+        Опис: <span className={css.textFieldValue}>{description}</span>
+      </p>
+      <p // className="imageTitles"
+        className={css.imageTitles}
+      >
+        Рекламна модель:
+      </p>
+      <img src={urlPromotional} alt={nameBrief} />
+      <p // className="imageTitles"
+        className={css.imageTitles}
+      >
+        Реальна модель:
+      </p>
+      <div className={css.actualImageBox}>
         {urlActual.map((image, index) => (
           <img
             // style={{
             //   maxWidth: "calc((100% - 10px) / 2)",
             //   borderRadius: 4,
             // }}
-            className="actualImageBox"
+            className={css.actualImage}
             key={index}
             src={image}
             alt={nameBrief}
