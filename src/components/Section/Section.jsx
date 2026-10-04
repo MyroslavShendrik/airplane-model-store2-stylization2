@@ -14,7 +14,9 @@ function Section({ title, children }) {
           //   color: "darkred",
           // }}
           // className="title"
-          className={css.title}
+          // className={css.title }
+          // className={`${css.title} ${css.lugrasimoBold} `}
+          className={css.titleLugrasimoBold}
         >
           {title}
         </h2>
