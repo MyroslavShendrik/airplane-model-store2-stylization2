@@ -27,7 +27,7 @@
 
 .actualImageBox{
     display: flex;
-    gap: 10;
+    gap: 10px;
     flex-wrap: wrap;
     padding: 8px;
     border-radius: 8px;
