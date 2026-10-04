@@ -143,7 +143,7 @@ export default function PlaneItem({
         //   boxShadow:
         //     "inset 0 0 16px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.9)",
         // }}
-        className="planeButton"
+        className={css.planeButton}
         type="button"
       >
         Додати до кошику
