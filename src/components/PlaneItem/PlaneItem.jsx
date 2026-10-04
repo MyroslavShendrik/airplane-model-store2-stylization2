@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import defaultImage from "./default.jpg"; //! Дефолтне зображення
 // import './PlaneItem.css'
+import { ImAirplane } from "react-icons/im";
 import css from "./PlaneItem.module.css";
 
 //! Стилі для текстових полів
@@ -51,6 +52,12 @@ export default function PlaneItem({
       >
         {nameBrief}
       </h3>
+      {/* <ImAirplane
+       size={59}
+       color="red"
+       style={{ color: "blue" }} 
+       className={css.ImAirplane}
+      /> */}
       <img src={urlMain} alt={nameBrief} />
       <p
         // className="textField"
