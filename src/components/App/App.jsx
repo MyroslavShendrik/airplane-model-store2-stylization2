@@ -8,11 +8,11 @@ import Section from '../Section/Section.jsx' //! ванільний CSS
 // import PlanesList from './components/PlanesListBuiltInStyles.jsx';  //! вбудовані стилі
 import PlanesList from '../PlanesList/PlanesList.jsx'; //! ванільний CSS
 
-import planes from '../../json/planes.json';
-// import planes from '@/json/planes.json'; //! --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
+// import planes from '../../json/planes.json';
+import planes from '@/json/planes.json'; //! --> ✅✅✅Аліаси імпортів з абсолютними шляхами з jsconfig.json
 
 
-export default function App() {
+export function App() {
   return (
     <>
       <Section title="Магазин моделей літаків">

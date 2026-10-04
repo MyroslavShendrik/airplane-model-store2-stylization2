@@ -1,14 +1,15 @@
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
 
-// https://vite.dev/config/
+//todo: https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'airplane-model-store2-stylization2', //! <-- ім'я репозиторію
+  base: '/airplane-model-store2-stylization2/', //! <-- ім'я репозиторію
   //! Налаштування Аліасів для абсолютних шляхів імпортів
-  // resolve: {
-  //   alias: {
-  //     '@': path.resolve(__dirname, 'src'),
-  //   },
-  // },
-})
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
+});
