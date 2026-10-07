@@ -16,10 +16,12 @@
     outline: 1px solid grey;
 }
 /** backgroundColor: '#d2fdbd', // "year"  1946 - 1999 - last */
-.planesItem.last {
+.last {
+  composes:planesItem;
   background-color: #d2fdbd;
 }
 
-.planesItem.last.current{
+.current{
+  composes:planesItem;
   background-color: #d6f1ff;
 }

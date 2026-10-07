@@ -2,19 +2,23 @@ import PropTypes from "prop-types";
 // import PlaneItem from "./PlaneItemBuiltInStyles.jsx"; //! вбудовані стилі
 import PlaneItem from "../PlaneItem/PlaneItem.jsx"; //! ванільний CSS
 // import {color} from "../utils/getBackgroundColor.js"
-import { getBgColorBuiltInStyles, getBgColorVanillaCSS } from "../../utils/getBackgroundColor.js";
+import {
+  getBgColorBuiltInStyles,
+  getBgColorVanillaCSS,
+  getBgColorCSSModule,
+} from "../../utils/getBackgroundColor.js";
 import clsx from "clsx";
 // import './PlanesList.css'
-import css from './PlanesList.module.css'
+import css from "./PlanesList.module.css";
 
 const className = clsx(
   "first",
   10,
   undefined && "second",
   true && "third",
-  false ? "fourth" : "fifth"
+  false ? "fourth" : "fifth",
 );
-console.log("className:",className); // "first 10 third fifth" 
+console.log("className:", className); // "first 10 third fifth"
 //! Для визначення кольору фону картки в залежності від значення "year"
 // function getBgColorBuiltInStyles(year) {
 //   if (year < 1946) {
@@ -80,7 +84,10 @@ function PlanesList({ items }) {
           //   }}
           // className="planesItem last current"
           // className={getBgColorVanillaCSS(item.info.year)}
-          className={css.planesItem}
+          // className={css.planesItem}
+          // className={css.last}
+          // className={css.current}
+          className={css[getBgColorCSSModule(item.info.year)]}
           key={item.id}
         >
           <PlaneItem
