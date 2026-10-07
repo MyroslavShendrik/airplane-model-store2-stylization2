@@ -21,8 +21,10 @@ import { ImAirplane } from "react-icons/im";
 //? <GiAirplaneDeparture /> - Рекламна модель
 //? <CiAirportSign1 /> - Реальна модель
 
+
 //! Константи для розмірів іконок
 import { iconSize } from '@/constants/iconSize.js';
+// iconSize.md = 56;
 console.log("iconSize:",iconSize)
 import css from "./PlaneItem.module.css";
 
