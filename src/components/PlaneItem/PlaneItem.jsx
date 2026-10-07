@@ -21,7 +21,9 @@ import { ImAirplane } from "react-icons/im";
 //? <GiAirplaneDeparture /> - Рекламна модель
 //? <CiAirportSign1 /> - Реальна модель
 
-
+//! Константи для розмірів іконок
+import { iconSize } from '@/constants/iconSize.js';
+console.log("iconSize:",iconSize)
 import css from "./PlaneItem.module.css";
 
 //! Стилі для текстових полів
@@ -83,55 +85,55 @@ export default function PlaneItem({
         // className="textField"
         className={css.textField}
       >
-       <FcTrademark size={28} className={css.icon} /> Повна назва: <span className={css.textFieldValue}>{nameFull}</span>
+       <FcTrademark size={iconSize.md} className={css.icon} /> Повна назва: <span className={css.textFieldValue}>{nameFull}</span>
       </p>
       <p
         // className="textField"
         className={css.textField}
       >
-      <GiCommercialAirplane size={28} className={css.icon} />  Тип: <span className={css.textFieldValue}>{type}</span>{" "}
+      <GiCommercialAirplane size={iconSize.md} className={css.icon} />  Тип: <span className={css.textFieldValue}>{type}</span>{" "}
       </p>
       <p
         // className="textField"
         className={css.textField}
       >
-       <GiCeremonialMask size={28} className={css.icon} /> Прізвисько: <span className={css.textFieldValue}>{nickname}</span>
+       <GiCeremonialMask size={iconSize.md} className={css.icon} /> Прізвисько: <span className={css.textFieldValue}>{nickname}</span>
       </p>
       <p
         // className="textField"
         className={css.textField}
       >
-      <AiOutlineFlag size={28} className={css.icon} />  Країна виробник: <span className={css.textFieldValue}>{country}</span>
+      <AiOutlineFlag size={iconSize.md} className={css.icon} />  Країна виробник: <span className={css.textFieldValue}>{country}</span>
       </p>
       <p 
         // className="textField"
         className={css.textField}
       >
-      <AiOutlineClockCircle size={28} className={css.icon} />  Рік випуску: <span className={css.textFieldValue}>{year}</span>
+      <AiOutlineClockCircle size={iconSize.md} className={css.icon} />  Рік випуску: <span className={css.textFieldValue}>{year}</span>
       </p>
       <p
         // className="textField"
         className={css.textField}
       >
-       <CiBadgeDollar size={28} className={css.icon}/> Ціна: <span className={css.textFieldValue}>{price}</span>
+       <CiBadgeDollar size={iconSize.md} className={css.icon}/> Ціна: <span className={css.textFieldValue}>{price}</span>
       </p>
       <p
         // className="textField"
         className={css.textField}
       >
-      <AiOutlineInfoCircle size={28} className={css.icon} />  Опис: <span className={css.textFieldValue}>{description}</span>
+      <AiOutlineInfoCircle size={iconSize.md} className={css.icon} />  Опис: <span className={css.textFieldValue}>{description}</span>
       </p>
       <p // className="imageTitles"
         className={css.imageTitles}
       >
-      <GiAirplaneDeparture size={28} className={css.icon} />  Рекламна модель:
+      <GiAirplaneDeparture size={iconSize.lg} className={css.iconImage} />  Рекламна модель:
       </p>
 
       <img src={urlPromotional} alt={nameBrief} />
       <p // className="imageTitles"
         className={css.imageTitles}
       >
-      <CiAirportSign1 size={28} className={css.icon} />  Реальна модель:
+      <CiAirportSign1 size={iconSize.lg} className={css.iconImage} />  Реальна модель:
       </p>
       <div className={css.actualImageBox}>
         {urlActual.map((image, index) => (

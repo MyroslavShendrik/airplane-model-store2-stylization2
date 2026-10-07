@@ -65,3 +65,7 @@ color: green;
     margin-bottom: -8px;
     color: #9b25fc;
 }
+.iconImage{
+    composes:icon;
+    color: blue;
+}
